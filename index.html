@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Crest Hotel</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="yuqori-qism">
+        <div class="konteyner navigatsiya">
+            <a href="#bosh-sahifa" class="brend">Imperial <span>Crest</span></a>
+
+            <input type="checkbox" id="menyu-holat" class="menyu-belgi">
+            <label for="menyu-holat" class="menyu-tugma">☰</label>
+
+            <nav class="menyu">
+                <a href="#bosh-sahifa" class="menyu-havola">Bosh sahifa</a>
+                <a href="#xonalar" class="menyu-havola">Xonalar</a>
+                <a href="#qulayliklar" class="menyu-havola">Qulayliklar</a>
+                <a href="#band-qilish" class="menyu-havola">Band qilish</a>
+            </nav>
+
+            <a href="#band-qilish" class="tugma tugma-oltin yuqori-tugma">Xona band qilish</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="bosh-sahifa" class="asosiy-ekran">
+            <div class="konteyner">
+                <div class="asosiy-matn">
+                    <div class="nishon"><span>★★★★★</span> Samarqanddagi 5 yulduzli hashamatli mehmonxona</div>
+                    <h1 class="asosiy-sarlavha">Sharqona Hashamat va Zamonaviy Qulaylik Maskani</h1>
+                    <p class="asosiy-tavsif">
+                        Unutilmas dam olish, yuqori darajadagi mehmondo'stlik va shinam xonalarimizda o'zingizni uyingizdagidek his eting.
+                    </p>
+                </div>
+
+                <div class="qidiruv-quti">
+                    <form action="#xonalar" class="qidiruv-forma">
+                        <div class="qidiruv-bolak">
+                            <label for="kelish-sana" class="qidiruv-yorliq">Kelish sanasi</label>
+                            <input type="date" id="kelish-sana" class="kiritish" required>
+                        </div>
+                        <div class="qidiruv-bolak">
+                            <label for="ketish-sana" class="qidiruv-yorliq">Ketish sanasi</label>
+                            <input type="date" id="ketish-sana" class="kiritish" required>
+                        </div>
+                        <div class="qidiruv-bolak">
+                            <label for="mehmon-soni" class="qidiruv-yorliq">Mehmonlar</label>
+                            <select id="mehmon-soni" class="kiritish">
+                                <option>1 kishi</option>
+                                <option selected>2 kishi</option>
+                                <option>3 kishi</option>
+                                <option>4 kishi (Oila)</option>
+                                <option>5+ kishi (VIP)</option>
+                            </select>
+                        </div>
+                        <div class="qidiruv-bolak">
+                            <label for="xona-toifa" class="qidiruv-yorliq">Xona toifasi</label>
+                            <select id="xona-toifa" class="kiritish">
+                                <option>Barcha xonalar</option>
+                                <option>Standart xonalar</option>
+                                <option>Lyuks xonalar</option>
+                                <option>Oilaviy xonalar</option>
+                                <option>VIP va Prezident Suite</option>
+                            </select>
+                        </div>
+                        <a href="#xonalar" class="tugma tugma-chegara">Xonalarni ko'rish</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="xonalar" class="bolim">
+            <div class="konteyner">
+                <div class="bolim-boshi">
+                    <span class="kichik-sarlavha">Turar joylar katalogi</span>
+                    <h2 class="katta-sarlavha">Barcha Xonalar va Narxlar</h2>
+                    <p class="tavsif">
+                        Bizning mehmonxonamizda har bir mehmonning didi va byudjetiga mos 12 xil toifadagi shinam va hashamatli xonalar mavjud.
+                    </p>
+                </div>
+
+                <div class="xonalar">
+                    <article class="xona-karta">
+                        <div class="rasm-quti">
+                            <span class="yorliq">Tejamkor</span>
+                            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80" alt="Yakka kishilik Standart xona" class="rasm">
+                            <div class="narx">$65 <span>/ 830 000 so'm</span></div>
+                        </div>
+                        <div class="xona-tana">
+                            <h3 class="xona-nomi">1. Yakka Kishilik Standart</h3>
+                            <p class="matn">Ish safarlari uchun qulay, ixcham va barcha zarur jihozlarga ega shinam bir kishilik xona.</p>
+                            <div class="xona-xususiyat">
+                                <span class="belgi">22 m²</span>
+                                <span class="belgi">1 kishi</span>
+                                <span class="belgi">Wi-Fi</span>
+                                <span class="belgi">Nonushta</span>
+                            </div>
+                            <div class="xona-past">
+                                <a href="#band-qilish" class="tugma tugma-chegara">Band qilish</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xona-karta">
+                        <div class="rasm-quti">
+                            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80" alt="Ikki kishilik Standart xona" class="rasm">
+                            <div class="narx">$85 <span>/ 1 080 000 so'm</span></div>
+                        </div>
+                        <div class="xona-tana">
+                            <h3 class="xona-nomi">2. Ikki Kishilik Standart</h3>
+                            <p class="matn">Keng ikki kishilik ortopedik karavot, ish stoli va zamonaviy dush xonasiga ega yorug' xona.</p>
+                            <div class="xona-xususiyat">
+                                <span class="belgi">28 m²</span>
+                                <span class="belgi">2 kishi</span>
+                                <span class="belgi">Konditsioner</span>
+                                <span class="belgi">Smart TV</span>
+                            </div>
+                            <div class="xona-past">
+                                <a href="#band-qilish" class="tugma tugma-chegara">Band qilish</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xona-karta">
+                        <div class="rasm-quti">
+                            <img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=800&q=80" alt="Twin Standart xona" class="rasm">
+                            <div class="narx">$90 <span>/ 1 150 000 so'm</span></div>
+                        </div>
+                        <div class="xona-tana">
+                            <h3 class="xona-nomi">3. Twin Standart (2 karavot)</h3>
+                            <p class="matn">Do'stlar yoki hamkasblar uchun ikkita alohida qulay karavotga ega keng va sokin xona.</p>
+                            <div class="xona-xususiyat">
+                                <span class="belgi">30 m²</span>
+                                <span class="belgi">2 kishi</span>
+                                <span class="belgi">2 ta karavot</span>
+                                <span class="belgi">Bepul Wi-Fi</span>
+                            </div>
+                            <div class="xona-past">
+                                <a href="#band-qilish" class="tugma tugma-chegara">Band qilish</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xona-karta">
+                        <div class="rasm-quti">
+                            <span class="yorliq">Ommabop</span>
+                            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Superior xona" class="rasm">
+                            <div class="narx">$115 <span>/ 1 470 000 so'm</span></div>
+                        </div>
+                        <div class="xona-tana">
+                            <h3 class="xona-nomi">4. Superior Xona</h3>
+                            <p class="matn">Yuqori qavatda joylashgan, yumshoq dam olish burchagi va shahar manzarasiga ega xona.</p>
+                            <div class="xona-xususiyat">
+                                <span class="belgi">35 m²</span>
+                                <span class="belgi">2 kishi</span>
+                                <span class="belgi">Kofe mashina</span>
+                                <span class="belgi">Shved stoli</span>
+                            </div>
+                            <div class="xona-past">
+                                <a href="#band-qilish" class="tugma tugma-chegara">Band qilish</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xona-karta">
+                        <div class="rasm-quti">
+                            <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" alt="Deluxe xona" class="rasm">
+                            <div class="narx">$140 <span>/ 1 790 000 so'm</span></div>
+                        </div>
+                        <div class="xona-tana">
+                            <h3 class="xona-nomi">5. Deluxe Hashamatli Xona</h3>
+                            <p class="matn">Nafis sharqona bezaklar, keng vanna xonasi va shaxsiy balkonga ega yuqori qulaylikdagi xona.</p>
+                            <div class="xona-xususiyat">
+                                <span class="belgi">42 m²</span>
+                                <span class="belgi">2-3 kishi</span>
+                                <span class="belgi">Balkon</span>
+                                <span class="belgi">SPA kirish</span>
+                            </div>
+                            <div class="xona-past">
+                                <a href="#band-qilish" class="tugma tugma-chegara">Band qilish</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xona-karta">
+                        <div class="rasm-quti">
+                            <span class="yorliq">Tavsiya etiladi</span>
+                            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80" alt="Junior Suite xona" class="rasm">
+                            <div class="narx">$175 <span>/ 2 240 000 so'm</span></div>
+                        </div>
+                        <div class="xona-tana">
+                            <h3 class="xona-nomi">6. Junior Suite</h3>
+                            <p class="matn">Yotoqxona va mehmon qabul qilish hududiga ajratilgan, keng va hashamatli dizayndagi xona.</p>
+                            <div class="xona-xususiyat">
+                                <span class="belgi">52 m²</span>
+                                <span class="belgi">3 kishi</span>
+                                <span class="belgi">Mehmon burchagi</span>
+                                <span class="belgi">Mini-bar</span>
+                            </div>
+                            <div class="xona-past">
+                                <a href="#band-qilish" class="tugma tugma-chegara">Band qilish</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xona-karta">
+                        <div class="rasm-quti">
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Lyuks Xona" class="rasm">
+                            <div class="narx">$210 <span>/ 2 680 000 so'm</span></div>
+                        </div>
+                        <div class="xona-tana">
+                            <h3 class="xona-nomi">7. Crest Lyuks Xona</h3>
+                            <p class="matn">Alohida mehmonxona va yotoqxonadan iborat, panoramali derazalarga ega muhtasham lyuks.</p>
+                            <div class="xona-xususiyat">
+                                <span class="belgi">65 m²</span>
+                                <span class="belgi">3 kishi</span>
+                                <span class="belgi">2 ta xona</span>
+                                <span class="belgi">Hovuz va SPA</span>
+                            </div>
+                            <div class="xona-past">
+                                <a href="#band-qilish" class="tugma tugma-chegara">Band qilish</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xona-karta">
+                        <div class="rasm-quti">
+                            <span class="yorliq">Oilaviy</span>
+                            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=800&q=80" alt="Oilaviy xona" class="rasm">
+                            <div class="narx">$230 <span>/ 2 940 000 so'm</span></div>
+                        </div>
+                        <div class="xona-tana">
+                            <h3 class="xona-nomi">8. Oilaviy Keng Xona</h3>
+                            <p class="matn">Ota-onalar va bolalar uchun ikki alohida yotoqxona hamda o'yin hududiga ega qulay oilaviy maskan.</p>
+                            <div class="xona-xususiyat">
+                                <span class="belgi">75 m²</span>
+                                <span class="belgi">4 kishi</span>
+                                <span class="belgi">2 yotoqxona</span>
+                                <span class="belgi">4x Nonushta</span>
+                            </div>
+                            <div class="xona-past">
+                                <a href="#band-qilish" class="tugma tugma-chegara">Band qilish</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xona-karta">
+                        <div class="rasm-quti">
+                            <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=800&q=80" alt="Biznes Suite" class="rasm">
+                            <div class="narx">$250 <span>/ 3 200 000 so'm</span></div>
+                        </div>
+                        <div class="xona-tana">
+                            <h3 class="xona-nomi">9. Biznes Executive Suite</h3>
+                            <p class="matn">Ishbilarmonlar uchun alohida muzokaralar xonasi, tezkor internet va VIP lounge kirish huquqiga ega xona.</p>
+                            <div class="xona-xususiyat">
+                                <span class="belgi">80 m²</span>
+                                <span class="belgi">2-3 kishi</span>
+                                <span class="belgi">Ish kabineti</span>
+                                <span class="belgi">VIP Lounge</span>
+                            </div>
+                            <div class="xona-past">
+                                <a href="#band-qilish" class="tugma tugma-chegara">Band qilish</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xona-karta">
+                        <div class="rasm-quti">
+                            <span class="yorliq">Yangi</span>
+                            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Imperial Panoramali Xona" class="rasm">
+                            <div class="narx">$290 <span>/ 3 710 000 so'm</span></div>
+                        </div>
+                        <div class="xona-tana">
+                            <h3 class="xona-nomi">10. Imperial Panoramali Suite</h3>
+                            <p class="matn">Keng shaxsiy terrasadan tarixiy Imperial maydoniga to'g'ridan-to'g'ri maftunkor manzara ochiladigan xona.</p>
+                            <div class="xona-xususiyat">
+                                <span class="belgi">92 m²</span>
+                                <span class="belgi">3 kishi</span>
+                                <span class="belgi">Katta terrasa</span>
+                                <span class="belgi">Jakuzi</span>
+                            </div>
+                            <div class="xona-past">
+                                <a href="#band-qilish" class="tugma tugma-chegara">Band qilish</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xona-karta">
+                        <div class="rasm-quti">
+                            <span class="yorliq">VIP</span>
+                            <img src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=800&q=80" alt="Qirollik Apartamenti" class="rasm">
+                            <div class="narx">$360 <span>/ 4 600 000 so'm</span></div>
+                        </div>
+                        <div class="xona-tana">
+                            <h3 class="xona-nomi">11. Qirollik Apartamenti</h3>
+                            <p class="matn">Ikki qavatli hashamatli apartament, shaxsiy sauna, ovqatlanish zali va 24/7 shaxsiy xizmatkor bilan.</p>
+                            <div class="xona-xususiyat">
+                                <span class="belgi">125 m²</span>
+                                <span class="belgi">4 kishi</span>
+                                <span class="belgi">Shaxsiy sauna</span>
+                                <span class="belgi">Transfer bepul</span>
+                            </div>
+                            <div class="xona-past">
+                                <a href="#band-qilish" class="tugma tugma-chegara">Band qilish</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xona-karta">
+                        <div class="rasm-quti">
+                            <span class="yorliq">Eksklyuziv</span>
+                            <img src="https://images.unsplash.com/photo-1631049552057-403cdb8f0658?auto=format&fit=crop&w=800&q=80" alt="Prezident Suite" class="rasm">
+                            <div class="narx">$450 <span>/ 5 760 000 so'm</span></div>
+                        </div>
+                        <div class="xona-tana">
+                            <h3 class="xona-nomi">12. Prezident Suite</h3>
+                            <p class="matn">Eng yuqori qavatdagi eng nufuzli rezidensiya: uchta xona, panoramali terrasa, jakuzi va barcha VIP imtiyozlar.</p>
+                            <div class="xona-xususiyat">
+                                <span class="belgi">160 m²</span>
+                                <span class="belgi">5 kishi</span>
+                                <span class="belgi">3 ta xona</span>
+                                <span class="belgi">Barcha xizmatlar</span>
+                            </div>
+                            <div class="xona-past">
+                                <a href="#band-qilish" class="tugma tugma-chegara">Band qilish</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="qulayliklar" class="bolim qulaylik-bolim">
+            <div class="konteyner">
+                <div class="bolim-boshi">
+                    <span class="kichik-sarlavha">Xizmatlar va sharoitlar</span>
+                    <h2 class="katta-sarlavha">Mehmonxona Qulayliklari</h2>
+                    <p class="tavsif">
+                        Mehmonlarimizning maroqli dam olishi va samarali ishlashi uchun barcha zamonaviy qulayliklar yaratilgan.
+                    </p>
+                </div>
+
+                <div class="qulayliklar">
+                    <div class="qulaylik-karta">
+                        <div class="qulaylik-belgi">📶</div>
+                        <h3 class="qulaylik-nomi">Bepul Tezkor Wi-Fi</h3>
+                        <p class="matn">Barcha xonalar, restoran va konferens-zallarda uzluksiz yuqori tezlikdagi optik internet.</p>
+                    </div>
+
+                    <div class="qulaylik-karta">
+                        <div class="qulaylik-belgi">🏊</div>
+                        <h3 class="qulaylik-nomi">Isitiladigan Hovuz</h3>
+                        <p class="matn">Yil davomida ishlaydigan yopiq va ochiq suzish havzalari hamda bolalar uchun xavfsiz basseyn.</p>
+                    </div>
+
+                    <div class="qulaylik-karta">
+                        <div class="qulaylik-belgi">🍽️</div>
+                        <h3 class="qulaylik-nomi">Milliy va Yevropa Restorani</h3>
+                        <p class="matn">Mohir oshpazlar tayyorlagan sara taomlar, tonggi shved stoli va panoramali terrasada kechki ovqat.</p>
+                    </div>
+
+                    <div class="qulaylik-karta">
+                        <div class="qulaylik-belgi">💆</div>
+                        <h3 class="qulaylik-nomi">SPA va Sauna Markazi</h3>
+                        <p class="matn">Turk hammomi, fin saunasi, jakuzi va professional massaj muolajalari bilan to'liq hordiq.</p>
+                    </div>
+
+                    <div class="qulaylik-karta">
+                        <div class="qulaylik-belgi">🏋️</div>
+                        <h3 class="qulaylik-nomi">24/7 Fitnes va Sport Zali</h3>
+                        <p class="matn">Zamonaviy kardio va kuch trenajyorlari bilan jihozlangan sport zali mehmonlar uchun bepul.</p>
+                    </div>
+
+                    <div class="qulaylik-karta">
+                        <div class="qulaylik-belgi">🚗</div>
+                        <h3 class="qulaylik-nomi">Bepul Avtoturargoh</h3>
+                        <p class="matn">24 soat qo'riqlanadigan yerosti avtoturargohi va elektromobillar uchun quvvatlash stansiyasi.</p>
+                    </div>
+
+                    <div class="qulaylik-karta">
+                        <div class="qulaylik-belgi">✈️</div>
+                        <h3 class="qulaylik-nomi">Aeroportdan Transfer</h3>
+                        <p class="matn">Samarqand xalqaro aeroporti va temir yo'l vokzalidan qulay avtomobillarda kutib olish xizmati.</p>
+                    </div>
+
+                    <div class="qulaylik-karta">
+                        <div class="qulaylik-belgi">🧺</div>
+                        <h3 class="qulaylik-nomi">Kir Yuvish va Xona Xizmati</h3>
+                        <p class="matn">Tezkor kimyoviy tozalash, dazmollash va kunu tun xonaga taom yetkazib berish xizmati.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="band-qilish" class="bolim">
+            <div class="konteyner">
+                <div class="bron-quti">
+                    <div class="bron-malumot">
+                        <div>
+                            <span class="kichik-sarlavha">Onlayn Buyurtma</span>
+                            <h2 class="bron-sarlavha">Xonani Hoziroq Band Qiling</h2>
+                            <p style="color: #cbd5e1; font-size: 15px;">
+                                Formani to'ldiring va operatorlarimiz 10 daqiqa ichida siz bilan bog'lanib, band qilishni tasdiqlaydilar.
+                            </p>
+
+                            <ul class="bron-royxat">
+                                <li class="bron-band">
+                                    <span class="tasdiq-belgi">✓</span>
+                                    <span>Oldindan to'lovsiz bepul bekor qilish</span>
+                                </li>
+                                <li class="bron-band">
+                                    <span class="tasdiq-belgi">✓</span>
+                                    <span>Har kuni ertalab bepul nonushta</span>
+                                </li>
+                                <li class="bron-band">
+                                    <span class="tasdiq-belgi">✓</span>
+                                    <span>Basseyn va sport zalidan bepul foydalanish</span>
+                                </li>
+                                <li class="bron-band">
+                                    <span class="tasdiq-belgi">✓</span>
+                                    <span>Eng arzon rasmiy narx kafolati</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="aloqa-quti">
+                            <p>24/7 Qabulxona telefoni:</p>
+                            <strong>+998 (66) 230-00-00</strong>
+                        </div>
+                    </div>
+
+                    <div class="forma-qism">
+                        <form action="#band-qilish" method="post" class="forma">
+                            <div class="forma-guruh">
+                                <label for="ism" class="forma-yorliq">To'liq ismingiz *</label>
+                                <input type="text" id="ism" name="ism" class="kiritish" placeholder="Masalan: Jasur Karimov" required>
+                            </div>
+
+                            <div class="forma-guruh">
+                                <label for="telefon" class="forma-yorliq">Telefon raqamingiz *</label>
+                                <input type="tel" id="telefon" name="telefon" class="kiritish" placeholder="+998 90 123 45 67" required>
+                            </div>
+
+                            <div class="forma-guruh">
+                                <label for="pochta" class="forma-yorliq">Elektron pochta *</label>
+                                <input type="email" id="pochta" name="pochta" class="kiritish" placeholder="jasur@mail.uz" required>
+                            </div>
+
+                            <div class="forma-guruh">
+                                <label for="tanlangan-xona" class="forma-yorliq">Xona turini tanlang *</label>
+                                <select id="tanlangan-xona" name="tanlangan-xona" class="kiritish" required>
+                                    <option value="1">1. Yakka Kishilik Standart — $65 / kecha</option>
+                                    <option value="2">2. Ikki Kishilik Standart — $85 / kecha</option>
+                                    <option value="3">3. Twin Standart (2 karavot) — $90 / kecha</option>
+                                    <option value="4" selected>4. Superior Xona — $115 / kecha</option>
+                                    <option value="5">5. Deluxe Hashamatli Xona — $140 / kecha</option>
+                                    <option value="6">6. Junior Suite — $175 / kecha</option>
+                                    <option value="7">7. Crest Lyuks Xona — $210 / kecha</option>
+                                    <option value="8">8. Oilaviy Keng Xona — $230 / kecha</option>
+                                    <option value="9">9. Biznes Executive Suite — $250 / kecha</option>
+                                    <option value="10">10. Imperial Panoramali Suite — $290 / kecha</option>
+                                    <option value="11">11. Qirollik Apartamenti — $360 / kecha</option>
+                                    <option value="12">12. Prezident Suite — $450 / kecha</option>
+                                </select>
+                            </div>
+
+                            <div class="forma-guruh">
+                                <label for="kirish" class="forma-yorliq">Kelish sanasi *</label>
+                                <input type="date" id="kirish" name="kirish" class="kiritish" required>
+                            </div>
+
+                            <div class="forma-guruh">
+                                <label for="chiqish" class="forma-yorliq">Ketish sanasi *</label>
+                                <input type="date" id="chiqish" name="chiqish" class="kiritish" required>
+                            </div>
+
+                            <div class="forma-guruh toliq-qator">
+                                <label for="odam-soni" class="forma-yorliq">Mehmonlar soni *</label>
+                                <select id="odam-soni" name="odam-soni" class="kiritish" required>
+                                    <option>1 mehmon</option>
+                                    <option selected>2 mehmon</option>
+                                    <option>3 mehmon</option>
+                                    <option>4 mehmon</option>
+                                    <option>5 mehmon</option>
+                                </select>
+                            </div>
+
+                            <div class="forma-guruh toliq-qator">
+                                <label for="izoh" class="forma-yorliq">Qo'shimcha istaklar (ixtiyoriy)</label>
+                                <textarea id="izoh" name="izoh" class="kiritish" placeholder="Aeroportdan kutib olish, bolalar karavoti yoki boshqa istaklaringizni yozing..."></textarea>
+                            </div>
+
+                            <div class="forma-guruh toliq-qator">
+                                <button type="submit" class="tugma tugma-chegara" style="width: 100%; padding: 15px; font-size: 16px;">
+                                    Band qilishni tasdiqlash
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pastki-qism">
+        <div class="konteyner">
+            <div class="pastki-ustunlar">
+                <div>
+                    <a href="#bosh-sahifa" class="brend">Imperial <span>Crest</span></a>
+                    <p style="margin-top: 14px; font-size: 14px; color: #94a3b8;">
+                        Samarqand markazidagi 5 yulduzli hashamatli mehmonxona. Biz har bir mehmonimizga unutilmas dam olish va yuqori sifatli xizmatni kafolatlaymiz.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="pastki-sarlavha">Bo'limlar</h4>
+                    <ul class="pastki-royxat">
+                        <li><a href="#bosh-sahifa">Bosh sahifa</a></li>
+                        <li><a href="#xonalar">Barcha xonalar</a></li>
+                        <li><a href="#qulayliklar">Qulayliklar</a></li>
+                        <li><a href="#band-qilish">Band qilish</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="pastki-sarlavha">Mashhur Xonalar</h4>
+                    <ul class="pastki-royxat">
+                        <li><a href="#xonalar">Standart Xona ($85)</a></li>
+                        <li><a href="#xonalar">Junior Suite ($175)</a></li>
+                        <li><a href="#xonalar">Oilaviy Xona ($230)</a></li>
+                        <li><a href="#xonalar">Prezident Suite ($450)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="pastki-sarlavha">Aloqa</h4>
+                    <ul class="pastki-royxat">
+                        <li>📍 Istiqbol kocha 14-uy, Namangan</li>
+                        <li>📞 +998 (20) 020 50 68</li>
+                        <li>✉️ @ImperialCrest.uz</li>
+                        <li>🕒 Ish vaqti: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="huquqlar">
+                &copy; 2026 Imperial Crest Hotel
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
